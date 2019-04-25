@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build:dev",
     "build:dev": "webpack-dev-server --env dev --mode none",
     "build:prod": "webpack --env prod --mode production",
+    "build": "webpack --env prod --mode development",
     "build:watch": "webpack-dev-server --env dev --mode none"
   },
   "author": "mwieth",
